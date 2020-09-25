@@ -25,4 +25,4 @@ Server Started on Port 3310.
 
 *Important :* Allow the camera and audio permissions asked by the browser.
 
-Open browser and goto http://localhost:3000/
+Open browser and goto http://localhost:3310/
