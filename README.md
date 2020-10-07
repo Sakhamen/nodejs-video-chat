@@ -4,7 +4,10 @@ Zoom Clone
 
 ## App Preview
 
-![App Screenshot](/screenshot/demo.png)
+![Home Screenshot](/screenshot/home.png)
+
+![Room Screenshot](/screenshot/demo.png)
+
 
 ## Developed using
 
