@@ -172,4 +172,6 @@ const leaveMeeting = () => {
    setStopVideo();
    setMuteButton();
    // document.querySelector('.main__leave_meeting').innerHTML = html;
+
+   window.location.href = "/";
  };

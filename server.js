@@ -17,13 +17,17 @@ app.use(express.static('public'));
 
 app.use('/peerjs', peerServer);
 
-app.get('/', (req, res) => {
+app.get("/", (req, res) => {
+  res.render("index");
+});
+
+app.get("/create-room/", (req, res) => {
   res.redirect(`/${uuidv4()}`);
-})
+});
 
 app.get('/:room', (req, res) => {
   res.render('room', { roomId: req.params.room })
-})
+});
 
 io.on('connection', socket => {
   socket.on('join-room', (roomId, userId) => {
@@ -39,7 +43,7 @@ io.on('connection', socket => {
       io.to(roomId).emit('createdMessage', message);
     });
   })
-})
+});
 
 
 const PORT = process.env.PORT || 3310;
